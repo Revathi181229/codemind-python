@@ -1,13 +1,10 @@
-n=int(input())
-d=len(str(n))
-sum=0
-temp=n
-while(n>0):
-    r=n%10
-    sum=sum+int(r**d)
-    n=n//10
-    d=d-1
-if(temp==sum):
-    print(True)
+n=(input())
+p=1
+s=0
+for i in n:
+    s+=int(i)**p
+    p+=1
+if str(s)==n:
+    print("True")
 else:
-    print(False)
+    print("False")
